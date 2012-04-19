@@ -10,8 +10,8 @@
 	<!-- Date: 2012-04-19 -->
 </head>
 <body>
-	<form method="post" action="https://www.paypal.com/cgi-bin/webscr">
-	<input type="hidden" name="cmd" value="_xclick">
+	<form method="post" action="https://www.paypal.com/cgi-bin/webscr" target="paypal">
+	<input type="hidden" name="cmd" value="_cart">
 	<input type="hidden" name="business" value="paypal@5phen.com">
 	<input type="hidden" name="item_name" value="37.5phen">
 	<input type="hidden" name="item_number" value="37.5-phen-60">
@@ -22,7 +22,13 @@
 	<input type="hidden" name="currency_code" value="GBP">
 	<input type="hidden" name="return" value="">
 	<input type="hidden" name="undefined_quantity" value="1">
-	<input type="image" src="http://www.paypalobjects.com/en_US/i/btn/x-click-but23.gif" border="0" name="submit" width="68" height="23" alt="Make payments with PayPal - it's fast, free and secure!">
+	<input type="hidden" name="add" value="1">
+	<input type="image" src="http://www.paypalobjects.com/en_US/i/btn/x-click-but22.gif" border="0" name="submit" width="87" height="23" alt="Make payments with PayPal - it's fast, free and secure!">
 	</form>
+
+<script src="/js/minicart.js" type="text/javascript"></script>
+<script type="text/javascript">
+    PAYPAL.apps.MiniCart.render();
+</script>
 </body>
 </html>
