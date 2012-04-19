@@ -44,3 +44,49 @@ p.first-of-type {
 .yui3-loading #productsandservices {
 	display: none;
 }
+
+/* Goals ================================================================================== */ 
+
+.goals {
+	float: right;
+	width: 260px;
+	height: 250px;
+}
+
+.goals h4 {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-size: 167%;
+	color: #EE4728;
+	letter-spacing: -1px;
+}
+
+.goals ul{
+	width:250px;
+	margin-bottom:20px;
+	overflow:hidden;
+	border-top:1px solid #ccc;
+}
+.goals li{
+	line-height:1.5em;
+	border-bottom:1px solid #ccc;
+	float:left;
+	display:inline;
+	font-size: 88%;
+}
+
+.goals a:hover { background:#EE4728; color: #000000;}
+
+#double li  { width:50%;} /* 2 col */
+
+.goals ul li a {
+	display: block;
+	color: #666;
+	text-decoration: none;
+	padding-left: 30px;
+	padding-top: 9px;
+}
