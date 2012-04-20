@@ -234,7 +234,21 @@
     });
 
 </script>
+<script type="text/javascript">	
 
+YUI({
+    gallery : 'gallery-2011.03.23-22-20'
+}).use( 'gallery-accordion', function(Y) {
+    var accordion = new Y.Accordion({
+        srcNode: "#acc1",
+        useAnimation: true,
+        collapseOthersOnExpand: true
+    });
+
+    accordion.render();
+});
+
+</script>
 <script src="/js/minicart.js" type="text/javascript"></script>
 <script type="text/javascript">
     PAYPAL.apps.MiniCart.render();
